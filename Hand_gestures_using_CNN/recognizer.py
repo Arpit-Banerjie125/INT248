@@ -11,7 +11,7 @@ from keras.preprocessing import image
 from keras.models import load_model
 import cv2
 
-newmod=load_model('//hand_gestures.h5')
+newmod=load_model('hand_gestures.h5')
 # This background will be a global variable that we update through a few functions
 background = None
 
