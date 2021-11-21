@@ -55,14 +55,14 @@ vertical_flip=True)
 test_datagen = ImageDataGenerator(rescale=1./255)
 
 training_set = train_datagen.flow_from_directory(
-        '//data/train',
+        'data/train',
         target_size=(64,64),#it should same as the input shape in convolaion
         batch_size=32,
         color_mode='grayscale',
         class_mode='categorical')
 
 test_set = test_datagen.flow_from_directory(
-        '//data/test',
+        'data/test',
         target_size=(64,64),#it should same as the input shape in convolaion
         batch_size=32,
         color_mode='grayscale',
